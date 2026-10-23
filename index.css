@@ -1,0 +1,870 @@
+/* ===========================
+   AUTO WASH ASSIGNMENT 2
+   =========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width:90%;
+    max-width:  1200px; 
+    margin:auto;
+}
+
+/* ===========================
+   Top Header
+   =========================== */
+
+.top-header{
+    background:#fff;
+    padding:15px 0;
+}
+
+.top-header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo h2{
+    color:#1d2d50;
+}
+
+.logo span{
+    color:red;
+}
+
+.header-info{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:13px;
+}
+
+.box i{
+    color:red;
+    font-size:20px;
+}
+
+button{
+    background:red;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+/* ===========================
+   Navbar
+   =========================== */
+
+.navbar{
+    background:#1d2d50;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+}
+
+.navbar ul li{
+    padding:18px;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:15px;
+}
+
+.navbar ul li a:hover{
+    color:red;
+}
+
+/* ===========================
+   Hero
+   =========================== */
+
+.hero{
+    background-image:url("img/carousel-3.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:650px;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.5);
+    height:100%;
+    text-align:center;
+    color:white;
+    padding-top:180px;
+}
+
+.overlay p{
+    color:red;
+    font-size:18px;
+    letter-spacing:2px;
+}
+
+.overlay h1{
+    font-size:60px;
+    margin:20px 0;
+}
+
+.overlay h5{
+    font-weight:normal;
+    margin-bottom:30px;
+}
+
+/* ===========================
+   About
+   =========================== */
+
+.about{
+    padding:80px 0;
+}
+
+.about .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.about-img{
+    width:45%;
+}
+
+.about-img img{
+    width:100%;
+    display:block;
+}
+
+.about-text{
+    width:50%;
+}
+
+.about-text h5{
+    color:red;
+    margin-bottom:10px;
+}
+
+.about-text h2{
+    font-size:35px;
+    color:#1d2d50;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    color:gray;
+    line-height:25px;
+}
+
+.about-text ul{
+    list-style:none;
+    margin:20px 0;
+}
+
+.about-text ul li{
+    margin-bottom:10px;
+}
+
+.about-text button{
+    margin-top:10px;
+}
+
+/* ===========================
+   Services
+   =========================== */
+
+.services{
+    padding:70px 0;
+    text-align:center;
+}
+
+.services h5{
+    color:red;
+}
+
+.services h2{
+    font-size:35px;
+    color:#1d2d50;
+    margin:15px 0 50px;
+}
+
+.service-box{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.service-box .box{
+    width:23%;
+    margin-bottom:40px;
+    text-align:center;
+}
+
+.service-box .box i{
+    font-size:35px;
+    color:red;
+    margin-bottom:15px;
+}
+
+.service-box .box h3{
+    margin-bottom:10px;
+    color:#1d2d50;
+}
+
+.service-box .box p{
+    color:gray;
+    font-size:14px;
+    line-height:22px;
+}
+/* Counter */
+
+.counter{
+    background:#1d2d50;
+    padding:70px 0;
+}
+
+.counter .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    text-align:center;
+}
+
+.counter-box{
+    width:23%;
+}
+
+.counter-box i{
+    color:red;
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.counter-box h2{
+    color:white;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.counter-box p{
+    color:white;
+    font-size:15px;
+}
+
+/* Price */
+
+.price{
+    padding:80px 0;
+    text-align:center;
+}
+
+.price h5{
+    color:red;
+}
+
+.price h2{
+    font-size:35px;
+    color:#1d2d50;
+    margin:15px 0 50px;
+}
+
+.price-box{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.price-card{
+    width:31%;
+    border:1px solid #ddd;
+    padding:35px 20px;
+    border-radius:10px;
+}
+
+.price-card h3{
+    color:#1d2d50;
+    margin-bottom:15px;
+}
+.price-card h2{
+    font-size: 45px;
+    margin: 20px 0;
+    color: #1d2d50;
+}
+.price-card h2 span{
+    color: #E81C2E;
+}
+.price-card h1{
+    color:red;
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.price-card p{
+    margin:12px 0;
+    color:gray;
+}
+
+.price-card button{
+    margin-top:20px;
+}
+
+.active{
+    background:#1d2d50;
+}
+.active h2{
+    color: white;
+}
+.active h2 span{
+    color: #E81C2E;
+}
+.active h3,
+.active h1,
+.active p{
+    color:white;
+}
+/* Washing Section */
+
+.wash{
+    padding:80px 0;
+    background:#f8f8f8;
+}
+
+.wash .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.wash-left{
+    width:48%;
+}
+
+.wash-left h5{
+    color:red;
+    margin-bottom:10px;
+}
+
+.wash-left h2{
+    color:#1d2d50;
+    font-size:35px;
+    margin-bottom:20px;
+}
+
+.wash-right{
+    width:45%;
+    background:#1d2d50;
+    padding:30px;
+    border-radius:10px;
+}
+
+.wash-right h2{
+    color:white;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.wash-right input,
+.wash-right textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+}
+
+.wash-right button{
+    width:100%;
+}
+
+.point-box{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.point{
+    width:48%;
+    margin-bottom:30px;
+}
+
+.point-title{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:10px;
+}
+
+.point-title i{
+    color:#E81C2E;
+    font-size:24px;
+}
+
+.point-title h3{
+    color:#1d2d50;
+    font-size:20px;
+}
+
+.point p{
+    color:gray;
+    line-height:22px;
+    margin-bottom:8px;
+}
+
+.point span{
+    color:#E81C2E;
+    font-weight:bold;
+}
+
+/* ===========================
+   Team
+=========================== */
+
+.team{
+    padding:80px 0;
+    text-align:center;
+}
+
+.team h5{
+    color:#E81C2E;
+    margin-bottom:10px;
+}
+
+.team h2{
+    color:#1d2d50;
+    font-size:35px;
+    margin-bottom:50px;
+}
+
+.team-box{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.team-card{
+    width:23%;
+    margin-bottom:30px;
+}
+
+.team-card img{
+    width:100%;
+    height:210px;
+    object-fit:cover;
+    display:block;
+}
+
+.team-social{
+    background:#1d2d50;
+    padding:12px 0;
+    text-align:center;
+}
+
+.team-social i{
+    color:white;
+    margin:0 8px;
+    font-size:15px;
+}
+
+.team-info{
+    background:white;
+    border:1px solid #ddd;
+    padding:20px;
+}
+
+.team-info h3{
+    color:#1d2d50;
+    margin-bottom:8px;
+}
+
+.team-info p{
+    color:gray;
+}
+
+/* ===========================
+   Testimonial
+=========================== */
+
+.testimonial{
+    padding:80px 0;
+    text-align:center;
+}
+
+.testimonial h5{
+    color:#E81C2E;
+    margin-bottom:10px;
+}
+
+.testimonial h2{
+    color:#1d2d50;
+    font-size:35px;
+    margin-bottom:50px;
+}
+
+.testimonial-box{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.testimonial-card{
+    width:31%;
+    padding:20px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    text-align:left;
+}
+
+.client{
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.client img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    margin-right:15px;
+}
+
+.client-info h3{
+    color:#1d2d50;
+    font-size:18px;
+    margin-bottom:5px;
+}
+
+.client-info p{
+    color:gray;
+    font-size:14px;
+}
+
+.review{
+    color:gray;
+    line-height:24px;
+    font-size:15px;
+}
+
+/* ===========================
+   Blog
+=========================== */
+
+.blog{
+    padding:80px 0;
+    text-align:center;
+}
+
+.blog h5{
+    color:#E81C2E;
+    margin-bottom:10px;
+}
+
+.blog h2{
+    color:#1d2d50;
+    font-size:35px;
+    margin-bottom:50px;
+}
+
+.blog-box{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.blog-card{
+    width:31%;
+    border:1px solid #ddd;
+    background:#fff;
+    overflow: hidden;
+}
+
+.blog-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    display:block;
+}
+
+.blog-info{
+    padding:25px;
+    text-align:left;
+}
+
+.blog-detail{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:18px;
+    font-size:13px;
+    color:gray;
+}
+
+.blog-detail span i{
+    color:#E81C2E;
+    margin-right:5px;
+}
+
+.blog-info h3{
+    color:#1d2d50;
+    font-size:22px;
+    margin-bottom:15px;
+    line-height:30px;
+}
+
+.blog-info p{
+    color:gray;
+    font-size:17px;
+    line-height:30px;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+.footer{
+    background:#1d2d50;
+    padding:70px 0 25px;
+}
+
+.footer-box{
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    flex-wrap:nowrap;
+    gap:30px;
+}
+
+.footer-card{
+    width:25%;
+}
+
+.footer-card h3{
+    color:#E81C2E;
+    margin-bottom:25px;
+    font-size:22px;
+}
+
+.footer-card p{
+    color:white;
+    margin-bottom:18px;
+    font-size:15px;
+}
+
+.footer-card p i{
+    margin-right:10px;
+}
+
+.footer-card ul{
+    list-style:none;
+}
+
+.footer-card ul li{
+    color:white;
+    margin-bottom:18px;
+    cursor:pointer;
+}
+
+.footer-card ul li i{
+    margin-right:8px;
+}
+
+.footer-social{
+    margin-top:20px;
+}
+
+.footer-social i{
+    width:42px;
+    height:42px;
+    background:white;
+    color:#1d2d50;
+    text-align:center;
+    line-height:42px;
+    border-radius:50%;
+    margin-right:8px;
+    cursor:pointer;
+}
+
+.footer-card input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    background:transparent;
+    border:1px solid white;
+    color:white;
+}
+
+.footer-card input::placeholder{
+    color:#ddd;
+}
+
+.footer-card button{
+    width:100%;
+    background:white;
+    color:#1d2d50;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.footer-bottom{
+    margin-top:50px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,0.2);
+    text-align:center;
+}
+
+.footer-bottom p{
+    color:white;
+}
+
+.footer-bottom span{
+    color:#E81C2E;
+    font-weight:bold;
+}
+/* ===========================
+   Tablet
+=========================== */
+
+@media(max-width:992px){
+
+    .header-info{
+        gap:10px;
+    }
+
+    .overlay h1{
+        font-size:45px;
+    }
+
+    .about .container{
+        flex-direction:column;
+    }
+
+    .about-img,
+    .about-text{
+        width:100%;
+    }
+
+    .about-text{
+        margin-top:40px;
+    }
+
+    .service-box .box{
+        width:48%;
+    }
+
+    .counter .container{
+        flex-wrap:wrap;
+    }
+
+    .counter-box{
+        width:48%;
+        margin-bottom:30px;
+    }
+
+    .price-card{
+        width:48%;
+        margin-bottom:30px;
+    }
+
+    .wash .container{
+        flex-direction:column;
+    }
+
+    .wash-left,
+    .wash-right{
+        width:100%;
+    }
+
+    .wash-right{
+        margin-top:40px;
+    }
+
+    .team-card{
+        width:48%;
+        margin-bottom:30px;
+    }
+
+    .testimonial-card{
+        width:48%;
+        margin-bottom:30px;
+    }
+
+    .blog-card{
+        width:48%;
+        margin-bottom:30px;
+    }
+
+}
+.footer-card{
+    width:48%;
+    margin-bottom:35px;
+}
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media(max-width:768px){
+
+    .top-header{
+        display:none;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero{
+        height:500px;
+    }
+
+    .overlay{
+        padding-top:130px;
+    }
+
+    .overlay h1{
+        font-size:35px;
+    }
+
+    .about-text h2{
+        font-size:28px;
+    }
+
+    .services h2{
+        font-size:28px;
+    }
+
+    .service-box .box,
+    .counter-box,
+    .price-card,
+    .wash-left,
+    .wash-right,
+    .team-card,
+    .testimonial-card,
+    .blog-card{
+        width:100%;
+        margin-bottom:30px;
+    }
+
+}
+.footer-card{
+    width:100%;
+    margin-bottom:35px;
+}
